@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+
+@layer base {
+  .home-h1-main {
+    @apply text-globe leading-0.9 text-white border-none font-medium font-display text-fill-transparent text-stroke-2 uppercase text-left antialiased;
+  }
+
+  .home-h1 {
+    @apply text-h1 leading-0.9 font-display text-white font-medium text-fill-transparent text-stroke-2 uppercase  antialiased mt-16;
+  }
+
+  .span-h1 {
+    @apply text-fill-white text-stroke-0 uppercase font-display;
+  }
+
+  .text-clip {
+    @apply text-9xl leading-0.8 uppercase font-display text-stroke-transparent text-fill-transparent bg-clip-text bg-grated-pattern bg-60;
+  }
+
+  .faq-h4 {
+    @apply text-3xl font-display capitalize text-black font-medium mt-5;
+  }
+
+  .btn-text {
+    @apply leading-6 font-bold uppercase font-display;
+  }
+
+  .btn-footer {
+    @apply text-base leading-4 text-white font-bold uppercase;
+  }
+
+  .btn-blog {
+    @apply text-base text-yellowBtn font-light w-60 uppercase font-display;
+  }
+
+  .card-header {
+    @apply font-medium text-1.3 uppercase text-black font-display;
+  }
+  .card-author {
+    @apply text-0.9 leading-1.4 font-bold text-black italic font-sans;
+  }
+
+  .small-text {
+    @apply text-2xl leading-1.65 font-medium text-white font-smallText;
+  }
+
+  .lp-header {
+    @apply text-white text-h1 text-fill-transparent text-stroke-2 leading-0.9 uppercase font-display font-light;
+  }
+
+  .globe-img {
+    @apply bg-globe;
+  }
+
+  .unicorn-img {
+    @apply bg-unicorn;
+  }
+
+  .hand-left {
+    @apply bg-hand-left;
+  }
+
+  .hand-right {
+    @apply bg-hand-right;
+  }
+}
+
+@tailwind utilities;
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../public/font/proxima_ssv/Proxima\ Nova\ Black.otf");
+}
+
+
+@font-face {
+  font-family: "Proxima Regular";
+  src: url("../public/font/proxima_ssv/ProximaNova-Regular.otf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../public/font/Roboto-Medium.ttf");
+}
