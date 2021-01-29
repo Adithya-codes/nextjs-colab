@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 
-const thankyouPage = ()=>
+const Thankyoupage = ()=>
 {
 return
 (
@@ -12,4 +12,4 @@ return
 )
 }
 
-export default thankyouPage;
+export default  Thankyoupage;

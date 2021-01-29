@@ -1,7 +1,7 @@
 import React from "react"
 
 
-function StartButton({ setValue ,setConnection ,setTransaction }) {
+function Startbutton({ setValue ,setConnection ,setTransaction }) {
 
     const handleClick = ()=>
     {
@@ -13,10 +13,10 @@ function StartButton({ setValue ,setConnection ,setTransaction }) {
     }
   return (
     <button onClick={ handleClick}
-   className="start-btn">
+   className="underline">
       start over
     </button>
   )
 }
 
-export default StartButton
+export default Startbutton

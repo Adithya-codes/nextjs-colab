@@ -23,7 +23,7 @@
   }
 
   .btn-text {
-    @apply leading-6 font-bold uppercase font-display;
+    @apply leading-6 font-bold font-button uppercase;
   }
 
   .btn-footer {
@@ -82,4 +82,9 @@
 @font-face {
   font-family: "Roboto";
   src: url("../public/font/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family:"Rubik";
+  src: url("../public/font/Rubik-Bold.ttf");
 }

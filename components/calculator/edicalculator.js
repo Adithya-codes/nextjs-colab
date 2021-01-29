@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
-import Firstpage from './firstPage'
-import Secondpage from "./secondPage";
-import Thirdpage from "./thirdPage";
-import Fourthpage from "./fourthpage";
+import Firstpage from './FirstPage'
+import Secondpage from "./Secondpage";
+import Thirdpage from "./Thirdpage";
+import Fourthpage from "./Fourthpage";
+import Form from './Calculatorform';
 
-const ediCalculator = () => {
+const EdiCalculator = () => {
 
     const [transaction, setTransaction] = useState(null)
     const [transactionPrice, setTransactionPrice] = useState(null)
@@ -43,6 +44,7 @@ const ediCalculator = () => {
       setValue(1)
       setConnection(null)
       setTransaction(null)
+      setCount(null)
     }
   
     const handleChangeTrans = event => {
@@ -72,23 +74,24 @@ const ediCalculator = () => {
   return(
 
   <section
-    className="edi-calculator h-auto relative py-10 z-40"
+    className="edi-calculator table h-auto relative py-10 z-40 xs:mx-auto"
     id="calc-section"
   >
-    <div className="container mx-auto px-0.0625 w-full ">
-      <div className="flex flex-wrap self-center bg-white border-yellowBtn border-solid border-4 rounded-2xl py-3 px-0 xxs:h-50 xs:h-53 xxs:min-h-43.75 xxs:w-auto xxs:mx-auto ">
-        <div className="px-8 ml-offset xxs:flex-shrink-0 xxs:flex-grow-0 xxs:w-5/6 xxs:max-w-83.3 xxs:text-center">
+    <div className="container mx-auto px-0.0625 w-full xs:px-0.625 ">
+      <div className="flex flex-wrap self-center bg-white border-yellowBtn border-solid border-4 rounded-2xl py-3 px-0 xxs:h-51 sm:h-50 md:h-53 lg:h-55 xl:h-48
+        xxs:min-h-43.75 xxs:w-auto xxs:mx-auto  ">
+        <div className="px-4 ml-offset relative xxs:flex-shrink-0 xxs:flex-grow-0 xxs:w-5/6 xxs:max-w-83.3 xxs:text-center">
           <div>
-            <div className="relative w-full px-4 py-4 xxs:flex-grow-0 xxs:flex-shrink-0 xxs:w-full xxs:max-w-full">
+            <div className="flex justify-center w-full px-4 py-4 xxs:flex-grow-0 xxs:flex-shrink-0 xxs:w-full xxs:max-w-full ">
               <img
                 src="/images/svg/ace-logo.svg"
                 alt="ace-logo"
-                className=" align-middle mb-4 h-auto w-full max-w-12.5"
+                className=" align-middle mb-4 h-auto w-full max-w-12.5 text-center"
               />
             </div>
             <div id="calc-triger">
       {(value === 1 && (
-        <FirstPage
+        <Firstpage
           transaction={transaction}
           connection={connection}
           handleClick={handleClick}
@@ -100,7 +103,7 @@ const ediCalculator = () => {
         />
       )) ||
         (value === 2 && (
-          <SecondPage
+          <Secondpage
             onClick={handleClickComp}
             transactionPrice={transactionPrice}
             connectionPrice={connectionPrice}
@@ -127,7 +130,7 @@ const ediCalculator = () => {
           />
         )) ||
         (value === 5 && (
-          <Calcform handleClickThankYou={handleClickThankYou} />
+          <Form handleClickThankYou={handleClickThankYou} />
         )) ||
         (value === 6 && <Thankyou />) ||
         (value === 7 && (
@@ -148,4 +151,4 @@ const ediCalculator = () => {
   )
 };
 
-export default ediCalculator;
+export default EdiCalculator;
