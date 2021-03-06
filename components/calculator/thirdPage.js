@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 
-const Thirdpage = ({onClick ,handleClickStart ,setCount, setValue}) => {
+const ThirdPage = ({handleClick ,handleClickStart ,setCount, setValue}) => {
   return (
     <div className="flex flex-wrap -mx-4">
       <div className="flex-grow-0 flex-shrink-0 relative px-4 mt-4 text-center xxs:w-full xxs:max-w-full ">
@@ -30,10 +30,10 @@ const Thirdpage = ({onClick ,handleClickStart ,setCount, setValue}) => {
       <div className=" w-full mx-auto relative mt-10 bottom-4 btn-class xxs:mt-16 xl:mt-8 ">
           <div className="flex flex-wrap flex-shrink-0 flex-grow-0 absolute justify-center items-center w-full max-w-full md:w-6/12 md:max-w-50 md:ml-24 xl:ml-25 xl:px-4">
             <button
-              onClick={onClick}
+              onClick={handleClick}
               className="my-2 uppercase btn-double-outline btn-double-outline--pink btn-double-outline--outline-primary w-full border-0 bg-transparent  "
             >
-              <span className="uppercase font-display font-normal ">next</span>
+              <span className="uppercase font-display font-normal ">Calculate</span>
             </button>
             <div className="mt-4">
               <button
@@ -48,4 +48,4 @@ const Thirdpage = ({onClick ,handleClickStart ,setCount, setValue}) => {
   );
 };
 
-export default  Thirdpage;
+export default  ThirdPage;

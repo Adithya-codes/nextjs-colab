@@ -11,7 +11,7 @@
   }
 
   .span-h1 {
-    @apply text-fill-white text-stroke-0 uppercase font-display;
+    @apply text-fill-white text-stroke-0 uppercase font-display antialiased;
   }
 
   .text-clip {
@@ -19,11 +19,11 @@
   }
 
   .faq-h4 {
-    @apply text-3xl font-display capitalize text-black font-medium mt-5;
+    @apply text-3xl font-display capitalize text-black font-medium mt-5 antialiased;
   }
 
   .btn-text {
-    @apply leading-6 font-bold font-button uppercase;
+    @apply leading-6 font-button uppercase;
   }
 
   .btn-footer {
@@ -42,7 +42,7 @@
   }
 
   .small-text {
-    @apply text-2xl leading-1.65 font-medium text-white font-smallText;
+    @apply text-2xl leading-1.65 font-medium text-white font-smallText antialiased;
   }
 
   .lp-header {
@@ -71,6 +71,11 @@
 @font-face {
   font-family: "Proxima Nova";
   src: url("../public/font/proxima_ssv/Proxima\ Nova\ Black.otf");
+}
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url("../public/font/proxima_ssv/Proxima\ Nova\ Alt\ Bold.otf");
 }
 
 

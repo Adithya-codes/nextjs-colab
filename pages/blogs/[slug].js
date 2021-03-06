@@ -1,0 +1,2 @@
+//blogdetail page
+

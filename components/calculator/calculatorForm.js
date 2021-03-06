@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 
-const Calculatorform = ({handleClickThankYou}) => {
+const CalculatorForm = ({handleClickThankYou}) => {
   return (
     <div className="flex flex-wrap -mx-4">
       <div className="w-full px-4 flex-shrink-0 flex-grow-0 max-w-full">
@@ -20,7 +20,7 @@ const Calculatorform = ({handleClickThankYou}) => {
             <div className="flex flex-wrap -mx-4 xl:ml-25">
               <div className="relative px-4 w-full mb-4 xl:flex-shrink-0 xl:flex-grow-0 xl:w-65 xl:max-w-70.6">
                 <input
-                  name="company"
+                  name="name"
                   type="text"
                   className="form-control  border-navy-blue border-2 border-solid p-8 mt-4 "
                   placeholder="Name"
@@ -28,7 +28,7 @@ const Calculatorform = ({handleClickThankYou}) => {
               </div>
               <div className="relative px-4 w-full mb-4 xl:flex-shrink-0 xl:flex-grow-0 xl:w-65 xl:max-w-70.6 ">
                 <input
-                  name="company"
+                  name="email"
                   type="text"
                   className="form-control  border-navy-blue border-2 border-solid p-8 mt-4 "
                   placeholder="Email"
@@ -62,4 +62,4 @@ const Calculatorform = ({handleClickThankYou}) => {
   );
 };
 
-export default Calculatorform;
+export default CalculatorForm;

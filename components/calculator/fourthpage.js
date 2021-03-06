@@ -3,11 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import {useState,useEffect} from 'react'
 
-const Fourthpage = ({
+const FourthPage = ({
   connection,
   connectionPrice,
   handleClickStart,
-  handleClickForm,
+  handleClick,
   count,
   setValue,
 }) => {
@@ -28,9 +28,9 @@ const Fourthpage = ({
       <div className="flex flex-wrap -mx-4 relative edi-calculator-single text-black ">
         <div className="w-full px-4 relative py-6 flex-shrink-0 flex-grow-0 max-w-full">
           <div className="flex -mx-4 relative border-black border-b-2 border-solid xxs:flex-wrap sm:flex-nowrap">
-            <div className="flex content-start relative text-center px-4 w-full md:flex-grow-0 md:flex-shrink-0 md:w-6/12 md:max-w-50">
+            <div className="flex relative text-center px-4 w-full md:flex-grow-0 md:flex-shrink-0 md:w-6/12 md:max-w-50 md:content-start">
               <p className=" mb-2 pb-6 font-paragraph font-normal leading-1 text-black xxs:text-1.1875 xs:text-1.3 md:text-1.7 xxs:flex-1 xxs:w-0">
-                Cost per month based on EDI connections/month
+                Cost per month based on EDI connections/month:
               </p>
             </div>
             <div className=" relative px-4 w-full flex self-center justify-center sm:flex-shrink-0 sm:flex-grow-0 sm:w-6/12 sm:max-w-50">
@@ -43,8 +43,8 @@ const Fourthpage = ({
             </div>
           </div>
           <div className="flex  -mx-4 relative border-black border-b-2 border-solid xxs:flex-wrap sm:flex-nowrap">
-            <div className="flex content-start relative px-4 w-full md:flex-grow-0 md:flex-shrink-0 md:w-6/12 md:max-w-50">
-              <p className=" mb-2 pb-6 font-paragraph font-normal leading-1 text-black xxs:text-1.1875 xs:text-1.3 xxs: mt-4 md:text-1.7 ">
+            <div className="flex text-center relative px-4 w-full md:flex-grow-0 md:flex-shrink-0 md:w-6/12 md:max-w-50 md:content-start">
+              <p className=" mb-2 pb-6 font-paragraph font-normal leading-1 text-black xxs:text-1.1875 xs:text-1.3 xxs: mt-4 xxs:flex-1 xxs:w-0 md:text-1.7 ">
               One-time fee for &nbsp;
               <span
                   
@@ -69,7 +69,7 @@ const Fourthpage = ({
         </div>
 
         <div className="row -mx-4 flex flex-wrap xxs:px-2 lg:mt-8">
-          <p className="font-paragraph text-center text-black xxs:text-0.93 xs:text-1.2 sm:text-1.3 lg:text-1.6 xl:text-1.8 sm:mt-8 xl:mt-2">
+          <p className="font-smallText text-center text-black xxs:text-0.93 xs:text-1.2 sm:text-1.3 lg:text-1.6 xl:text-1.8 sm:mt-8 xl:mt-2">
             Like what you see? Take the next step with no obligation. Let's have
             a no-pressure conversation about your needs
           </p>
@@ -77,14 +77,14 @@ const Fourthpage = ({
         <div className="w-full max-w-full relative px-4">
           <div className="flex flex-wrap -mx-4 text-center">
             <div className=" flex-shrink-0 flex-grow-0 relative px-4 w-full max-w-full">
-              <div className=" w-full mx-auto relative mt-8 bottom-4 btn-class lg:mt-20 xl:mt-16  ">
-                <div className="flex flex-wrap flex-shrink-0 flex-grow-0 absolute justify-center items-center w-full max-w-full md:w-6/12 md:max-w-50 md:ml-25  ">
+              <div className=" w-full mx-auto relative mt-10 bottom-4 btn-class lg:mt-20 xl:mt-16  ">
+                <div className="flex flex-wrap flex-shrink-0 flex-grow-0 absolute justify-center items-center w-full max-w-full sm:w-6/12 sm:max-w-50 lg:w-1/3 lg:max-w-33.3  sm:ml-25 lg:ml-30  ">
                   <button
-                    onClick={handleClickForm}
+                    onClick={handleClick}
                     className="my-2 uppercase btn-double-outline btn-double-outline--pink btn-double-outline--outline-primary w-full border-0 bg-transparent  "
                   >
                     <span className="uppercase font-display font-normal ">
-                      next
+                   Connect with us
                     </span>
                   </button>
                   <div className="mt-4">
@@ -105,4 +105,4 @@ const Fourthpage = ({
   );
 };
 
-export default Fourthpage;
+export default FourthPage;

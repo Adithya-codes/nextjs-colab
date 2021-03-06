@@ -2,17 +2,16 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { useRef } from "react";
-import StartButton from "./Startbutton";
+import StartButton from "./StartButton";
 
-const Firstpage = ({
+const FirstPage = ({
   transaction,
   connection,
   setTransaction,
   setConnection,
   handleClick,
-  handleClickStart,
+
   setValue,
-  handleChangeTrans,
 }) => {
   const trans = useRef(transaction);
   console.log(setTransaction);
@@ -38,7 +37,7 @@ const Firstpage = ({
             </h6>
 
             <p className="text-black font-normal font-paragraph mb-2 leading-1 xxs:flex-1 xxs:text-1.1875  xs:text-1.3 sm:text-1.2 md:text-1.6 lg:text-1.7">
-              How many total transactions do you project each month?
+              How many total <u>transactions </u> do you project each month?
             </p>
 
             <input
@@ -47,7 +46,7 @@ const Firstpage = ({
               placeholder="#"
               id="transaction"
               value={transaction}
-              onChange={e => setTransaction(e.target.value)}
+              onChange={(e) => setTransaction(e.target.value)}
               type="text"
               className="edi-calculator-input font-display font-black leading-1 mb-2  xxs:text-2 xs:text-3.43 xxs:pt-14 xxs:pb-12 xs:pt-6 xs:pb-6 sm:pt-9 sm:pb-9 xl:text-4.125  xl:pb-14"
             />
@@ -55,11 +54,11 @@ const Firstpage = ({
 
           <div className="flex flex-col flex-wrap px-1 py-0 content-between justify-center flex-shrink-0 flex-grow-0 w-6/12 max-w-50">
             <h6 className="font-display uppercase text-black font-black leading-1.2 mt-4 mb-2 break-normal xxs:text-1 xs:text-1.2 md:text-1.75 lg:text-1.7 ">
-               Number of Connections 
+              Number of Connections
             </h6>
 
             <p className="text-black font-normal font-paragraph mb-2 leading-1 xxs:flex-1 xxs:text-1.1875 xs:text-1.3 sm:text-1.2 md:text-1.6 lg:text-1.7">
-              How many EDI conncections do you need?
+              How many EDI <u> conncections </u> do you need?
             </p>
 
             <input
@@ -73,7 +72,7 @@ const Firstpage = ({
             />
           </div>
         </div>
-        <div className=" w-full mx-auto relative bottom-6 mt-10 btn-class sm:mt-14 xl:mt-16 ">
+        <div className=" w-full mx-auto relative bottom-6 mt-10 btn-class sm:mt-14 xl:mt-16 edi-button ">
           <div className="flex flex-wrap flex-shrink-0 flex-grow-0 absolute justify-center items-center w-full max-w-full md:w-6/12 md:max-w-50 md:ml-25 xl:w-1/3 xl:max-w-33.3 xl:ml-33 ">
             <button
               onClick={handleClick}
@@ -81,7 +80,7 @@ const Firstpage = ({
             >
               <span className="uppercase font-display font-normal ">next</span>
             </button>
-            <div className="mt-4">
+            <div className=" xxs:mt-8 xs:mt-4">
               <button className="start-btn text-black font-smallText  xxs:text-1.1875">
                 <StartButton
                   setValue={setValue}
@@ -97,4 +96,4 @@ const Firstpage = ({
   );
 };
 
-export default Firstpage;
+export default FirstPage;

@@ -2,10 +2,10 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 
-const Secondpage = ({
+const SecondPage = ({
   transactionPrice,
   connectionPrice,
-  onClick,
+  handleClick,
   handleClickStart,
   setValue,
 }) => {
@@ -30,7 +30,7 @@ const Secondpage = ({
               Transactions based price per month
             </h6>
 
-            <h1 className="edi-calculator-input font-display font-black leading-1 mb-2 xxs:text-2.1 xs:text-3.43 xl:text-4.125 xxs:pt-14 xxs:pb-16 xs:pt-12 xs:pb-12 sm:pb-16 sm:pt-16 ">
+            <h1 className="edi-calculator-input font-display font-black leading-1 mb-2 xxs:text-2.1 xs:text-3.43 xl:text-4.125 xxs:pt-20 xxs:pb-20 xs:pt-12 xs:pb-12 sm:pb-16 sm:pt-16 ">
               <sup>$</sup>
               <span> {transactionPrice}</span>
             </h1>
@@ -41,29 +41,29 @@ const Secondpage = ({
               Connections based price per month
             </h6>
 
-            <h1 className="edi-calculator-input font-display font-black leading-1 mb-2 pt-14 pb-16 xxs:text-2.1 xl:text-4.125 xs:text-3.43 xxs:pt-14 xxs:pb-16 xs:pt-12 xs:pb-12 sm:pb-16 sm:pt-16">
+            <h1 className="edi-calculator-input font-display font-black leading-1 mb-2 pt-14 pb-16 xxs:text-2.1 xl:text-4.125 xs:text-3.43 xxs:pt-20 xxs:pb-20 xs:pt-12 xs:pb-12 sm:pb-16 sm:pt-16">
               <sup>$</sup>
               <span> {connectionPrice}</span>
             </h1>
           </div>
         </div>
-        <div className="w-full mx-auto relative bottom-6 btn-className xxs:mt-16 xs:mt-14 sm:mt-10 ">
+        <div className="w-full mx-auto relative bottom-6 btn-className xxs:mt-12 xs:mt-14 sm:mt-10 ">
           <div className='absolute flex flex-row flex-wrap items-center justify-center w-full '>  
           <div className=" flex-shrink-0 flex-grow-0 xxs:w-6/12 xxs:max-w-50 xxs:pl-0 xxs:pr-4 md:pl-16 md:pr-14 md:w-6/12 md:max-w-50  ">
             <button
-              onClick={onClick}
+              onClick={handleClick}
               className="my-2 uppercase btn-double-outline btn-double-outline--pink btn-double-outline--outline-primary w-full border-0 bg-transparent "
             >
-              <span className="uppercase font-display font-normal ">next</span>
+              <span className="uppercase font-display font-normal ">select</span>
             </button>
           </div>
 
           <div className=" flex-shrink-0 flex-grow-0 w-6/12 max-w-50 xxs:pl-4 xxs:pr-1 md:pl-16 md:pr-14 md:w-6/12 md:max-w-50  ">
             <button
-              onClick={onClick}
+              onClick={handleClick}
               className="my-2 uppercase btn-double-outline btn-double-outline--pink btn-double-outline--outline-primary w-full order-0 bg-transparent "
             >
-              <span className="uppercase font-display font-normal ">next</span>
+              <span className="uppercase font-display font-normal ">select</span>
             </button>
           </div>
           <div className="mt-4  relative w-6/12 max-w-50 text-center ">
@@ -81,4 +81,4 @@ const Secondpage = ({
   );
 };
 
-export default Secondpage;
+export default SecondPage;

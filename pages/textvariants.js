@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 
-export default function Text() {
+export default function TextVariants() {
   return (
     <div className="bg-gradient-to-b from-primary via-secondary to-third to-fourth min-h-screen">
       <div className="container mx-auto  px-20 py-3">
