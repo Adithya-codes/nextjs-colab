@@ -258,8 +258,8 @@ module.exports = {
       backgroundImage: (theme) => ({
         "grated-pattern":
           "url('/images/svg/GratedBackground.svg'), linear-gradient(180deg, #f0e530, #e52f7b) ",
-        globe: "url('/images/globe.png')",
-        unicorn: "url('/images/unicorn.png')",
+        // globe: "url('/images/globe.png')",
+ 
         "hand-left": "url('/images/left-hand.png')",
         "hand-right": "url('/images/right-hand.png')",
       }),

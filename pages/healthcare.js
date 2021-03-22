@@ -28,8 +28,8 @@ const healthcare = () => {
     });
   };
   return (
-    <div className="landing-wrapper" id="hp-landing-page">
-      <div className="sections-container">
+    <div className="" id="hp-landing-page">
+      <div className="sections-container" id='hp-wrapper'>
         <div className="container mx-auto xxs:px-0.0625 sm:px-0.625 ">
           <div className=" video-sectionflex flex-wrap mx-auto w-full items-center">
             <div className="px-1 w-full mb-12 xxs:ml-0 xxs:mr-auto ">
@@ -62,16 +62,14 @@ const healthcare = () => {
                 playing={true}
                 controls={true}
                 light="../images/thumbnail.png"
-                playIcon={
-                  <img src="/images/play-button.png" className=" w-2/12" />
-                }
+                playIcon={<img src='/images/play-circle-blue.svg' className=' w-24'/>}
                 onPlay={handlePlayBtn}
                 onPause={handlePauseBtn}
               />
             </div>
           </div>
 
-          <section className="h-45" id="hp-the-globe-split">
+          <section className="h-45 lg:h-40" id="hp-the-globe-split">
             <div className="container xxs:px-0.0625 sm:px-0.625">
               <div className=" flex flex-col items-start order-2 px-2 text-right xxs:flex-shrink-0 xxs:flex-grow-0 xxs:max-w-full xxs:mt-28 lg:w-4/6 lg:max-w-66.6 lg:ml-33 xl:max-w-58.3 xl:w-58.3">
                 <div className="title text-right relative  ">
@@ -99,13 +97,13 @@ const healthcare = () => {
             </div>
           </section>
 
-          <section className="hp-blue-part px-0 xxs:-mt-32 lg:mt-36">
+          <section className="hp-blue-part px-0 xxs:-mt-32 lg:-mt-56 ">
             <div className="container xxs:px-0.0625 sm:px-0.625">
-              <div className="edi-calc lg:mt-14 w-full ">
+              <div className="edi-calc w-full ">
                 <Calculator />
               </div>
 
-              <div className="octopus-image relative w-full xxs:pb-36 xl:ml-offset z-40">
+              <div className="brain-image relative w-full xxs:pb-36 xl:ml-offset z-40">
                 <div className="octopus-title xxs:mt-16 xxs:pb-8 xxs:px-0 xxs:pt-12 lg:px-6 xl:px-4  ">
                   <h1 className="home-h1 xxs:text-3.38 sm:text-3.38 lg:text-h1 xxs:leading-0.9">
                     {" "}
@@ -124,23 +122,24 @@ const healthcare = () => {
                     <div className="relative flex flex-col self-center px-8">
                       <ul className="mt-0 px-4 list-disc">
                         <li className=" small-text font-normal text-white mb-6 xxs:leading-1.2 xxs:text-1.26 xs:text-1.4 sm:text-1.6 lg:text-1.75  ">
-                          More cost-effective than other EDI platforms
+                        More cost-effective than other EDI platforms
                         </li>
 
                         <li className=" small-text font-normal text-white mb-6 xxs:leading-1.2  xxs:text-1.26 xs:text-1.4 sm:text-1.6 lg:text-1.75   ">
-                          Full customization to your ERP system
+                        Full HL7 system integration
                         </li>
 
                         <li className=" small-text font-normal text-white mb-6 xxs:leading-1.2  xxs:text-1.26 xs:text-1.4 sm:text-1.6 lg:text-1.75   ">
-                          Accepts the most-used EDI formats, plus custom files
+                        Accepts the most-used health care EDI formats, plus
+                            custom files
                         </li>
 
                         <li className=" small-text font-normal text-white mb-6 xxs:leading-1.2  xxs:text-1.26 xs:text-1.4 sm:text-1.6 lg:text-1.75    ">
-                          Highly secure with all secure file transfer protocols
+                        HIPAA compliant with secure file transfer protocols
                         </li>
 
                         <li className=" small-text font-normal text-white mb-6 xxs:leading-1.2  xxs:text-1.26 xs:text-1.4 sm:text-1.6 lg:text-1.75   ">
-                          Easily scalable as your needs change
+                        Full disaster recovery options
                         </li>
 
                         <li className=" small-text font-normal text-white mb-6 xxs:leading-1.2  xxs:text-1.26 xs:text-1.4 sm:text-1.6 lg:text-1.75    ">
@@ -182,7 +181,7 @@ const healthcare = () => {
             </div>
           </section>
 
-          <section className="lp-grated-pattern relative" id="app-form-section">
+          <section className="lp-grated-pattern  relative" id="app-form-section">
             <div className="container xxs:px-0.0625 sm:px-0.625 xxs:pt-45 sm:pt-12 lg:pt-28 xxs:pb-12">
               <div className="relative flex -mx-4 px-4 text-center justify-center pb-12 sm:flex-wrap sm:flex-grow-0 sm:flex-shrink-0 sm:max-w-full sm:flex-row">
                 <ul className=" pl-0 list-none xxs:block xxs:relative xxs:top-0 sm:flex flex-wrap flex-row justify-between ">
@@ -204,32 +203,39 @@ const healthcare = () => {
                   ))}
                 </ul>
               </div>
-              <div className="flex xxs:flex-col sm:flex-nowrap sm:flex-row">
-                <div className=" text-right relative z-40  sm:flex-grow-0 sm:flex-shrink-0 sm:w-58.3 sm:max-w-58 xxs:px-4 sm:px-0 xxs:mt-10 sm:-mt-10 xl:w-5/12 ">
+              <div className='flex xxs:flex-col sm:flex-nowrap sm:flex-row'> 
+              <div className=" text-right relative z-40  sm:flex-grow-0 sm:flex-shrink-0 sm:w-50 sm:max-w-50 xxs:px-4 sm:px-0 xxs:mt-20 sm:-mt-10 xl:w-6/12">
+              <span className=' absolute top-14 xxs:left-24 xs:left-36 xl:left-46'>
+                    <img src="../images/svg/lp-footer-logo.svg" className='xxs:w-40.3 xl:w-7/12' alt="footer-logo"/>
+                  </span>
                   <div className="heading">
-                    <h1 className="home-h1 font-display mb-2 mx-auto xxs:text-3.12 xxs:leading-1 sm:text-6xl lg:text-h1 xl:leading-1">
-                      make <br /> the <br /> connection
+                 
+                    <h1 className="home-h1 font-display mb-2 mx-auto xxs:text-3.12 sm:text-6xl lg:text-h1 xl:leading-1">
+                   make <br /> the <br /> connection.
                     </h1>
                   </div>
 
+               
+
                   <div className="para">
-                    <p className="small-text xxs:text-xl xxs:leading-1.65 sm:text-1.125 lg:text-2xl lg:leading-1.65">
+                    <p className="small-text xxs:text-lg xxs:leading-1.65 sm:text-1.125 lg:text-2xl lg:leading-1.65">
                       High-quality services. Affordable prices.
                       <br />
                       Trusted guidance. Get it all with IDC.
                       <br />
+                    
                     </p>
                   </div>
                 </div>
-                <div className="form relative z-30 px-4 w-full mb-11 xxs:mt-6 sm:flex-grow-0 sm:flex-shrink-0 sm: max-w-50 sm:w-6/12">
+                <div className="form relative z-30 px-4 w-full mb-11 xxs:mt-6 sm:flex-grow-0 sm:flex-shrink-0 sm:max-w-50 xl:ml-4 sm:w-6/12">
                   <HubspotForm
                     portalId="7830205"
-                    formId="138fc0a1-fbc3-4e84-a27c-98b6cce7a9da"
+                    formId="2954081d-a37c-4045-bfa3-aa032ef25418"
                     // onSubmit={handleFormSubmit}
                     onReady={(form) => console.log("Form ready!")}
                   />
                 </div>
-              </div>
+                </div>
             </div>
           </section>
         </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import HubspotForm from "react-hubspot-form";
 
 
-const Form = ({heading1,heading2,heading3})=>
+const Form = ({heading1,heading2,heading3,description1,description2,description3})=>
 {
     return(
 
@@ -19,11 +19,11 @@ const Form = ({heading1,heading2,heading3})=>
             </div>
             <div className="para">
               <p className="small-text  xxs:leading-1.65 xxs:text-xl sm:text-lg sm:text-left lg:text-2xl lg:leading-1.65 lg:text-right">
-                High-quality services. Affordable prices.
+             {description1}
                 <br />
-                Trusted guidance. Get it all with IDC.
+             {description2}
                 <br />
-                Contact us today.
+       {description3}
                 <br />
               </p>
             </div>

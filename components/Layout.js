@@ -3,12 +3,16 @@ import Footer from "./Footer";
 
 import { Children } from "react";
 
-const Layout = (props) => {
+const Layout = ({children}) => {
+
+
+
   return (
     <>
-      <Header />
+ 
+      <Header  />
 
-      {props.children}
+      {children}
 
     <Footer />
     </>

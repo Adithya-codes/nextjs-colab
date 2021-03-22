@@ -49,13 +49,13 @@
     @apply text-white text-h1 text-fill-transparent text-stroke-2 leading-0.9 uppercase font-display font-light;
   }
 
-  .globe-img {
+  /* .globe-img {
     @apply bg-globe;
-  }
+  } */
 
-  .unicorn-img {
+  /* .unicorn-img {
     @apply bg-unicorn;
-  }
+  } */
 
   .hand-left {
     @apply bg-hand-left;

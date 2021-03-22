@@ -73,12 +73,12 @@ const FirstPage = ({
           </div>
         </div>
         <div className=" w-full mx-auto relative bottom-6 mt-10 btn-class sm:mt-14 xl:mt-16 edi-button ">
-          <div className="flex flex-wrap flex-shrink-0 flex-grow-0 absolute justify-center items-center w-full max-w-full md:w-6/12 md:max-w-50 md:ml-25 xl:w-1/3 xl:max-w-33.3 xl:ml-33 ">
+          <div className="flex flex-wrap flex-shrink-0 flex-grow-0 absolute justify-center items-center w-full max-w-full md:w-6/12 md:max-w-50 md:ml-25  ">
             <button
               onClick={handleClick}
               className="my-2 uppercase btn-double-outline btn-double-outline--pink btn-double-outline--outline-primary w-full border-0 bg-transparent  "
             >
-              <span className="uppercase font-display font-normal ">next</span>
+              <span className="uppercase font-display font-normal sm:text-lg ">next</span>
             </button>
             <div className=" xxs:mt-8 xs:mt-4">
               <button className="start-btn text-black font-smallText  xxs:text-1.1875">
